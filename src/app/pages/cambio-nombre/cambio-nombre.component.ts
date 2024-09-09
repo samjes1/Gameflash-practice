@@ -11,11 +11,13 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './cambio-nombre.component.scss',
 })
 export class CambioNombreComponent {
+
   usuarioService = inject(UsuarioService);
   router = inject(Router)
+
   cambiarNombre(nuevoNombre: string) {
     this.usuarioService.nombre.set(nuevoNombre);
-    this.router.navigate(["/cambio-nombre"])
+    this.router.navigate(["/"]);
 
  }
 
