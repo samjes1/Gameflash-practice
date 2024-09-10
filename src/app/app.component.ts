@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { BotonesComponent } from './components/botones/botones.component';
+import { ServerService } from './services/server.service';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,6 @@ import { BotonesComponent } from './components/botones/botones.component';
 })
 export class AppComponent {
   title = 'practicegame';
+
+  serverService = inject(ServerService);
 }
