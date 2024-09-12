@@ -15,6 +15,6 @@ export class UsuarioService {
   nombre = signal<string>("");
   nickname = '';
 
-  guardarNombreLocalStorage = effect(() => localStorage.setItem('nombre', this.nombre()))
+  guardarNombreLocalStorage = effect(() => localStorage.setItem("nombre", this.nombre()))
 
 }

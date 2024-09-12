@@ -19,7 +19,7 @@ export class HomeComponent {
   // busca sala si esta disponible
  buscarSalaPublica(){
   this.serverService.server.emitWithAck("encontrarSala").then(res => {
-    console.log(res)
+    /* console.log(res) */ 
     if (res === null ) return this.router.navigate(["/jugar"]);
       return this.router.navigate(["/jugar", res]);
   })

@@ -18,6 +18,19 @@ export const routes: Routes = [
   },
 
   {
+    path: 'jugar/:id',
+    component: JugarComponent,
+    canActivate: [ needednameGuard ]
+  },
+
+  {
+    path: 'jugar-privada',
+    component: JugarComponent,
+    canActivate: [ needednameGuard ],
+    data: {esPrivada: true}
+  },
+
+  {
     path: 'cambio-nombre',
     component: CambioNombreComponent,
   },
