@@ -9,6 +9,7 @@ $padding-console: 20px;
     max-width: 500px;
     border-radius: 40px;
     padding: calc($border-radius-base + $padding-console);
+    margin: auto;
 }
 
 #pantalla{
@@ -16,6 +17,7 @@ $padding-console: 20px;
     background-color: colors.$background;
     border-radius: 40px;
     outline: 10px solid colors.$primary;
+  
 }
 
 p{
